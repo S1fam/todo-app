@@ -14,7 +14,7 @@ while True:
     if user_action.startswith('add'):  # if the 'add' is first in the inputed string
         todo = user_action[4::]
 
-        todos = get_todos()  # we have specified file as default parameter, if we wanted different file, we use arg here
+        todos = get_todos("../files/todos.txt")
 
         todos.append(todo + '\n')  # appending list with new action
 
@@ -23,7 +23,7 @@ while True:
     elif user_action.startswith('complete'):
         try:
             try:
-                todos = get_todos()
+                todos = get_todos("../files/todos.txt")
 
                 number = int(user_action[9:])
                 index = number - 1
@@ -34,7 +34,7 @@ while True:
 
                 show_todos(todos)
 
-                write_todos(todos)
+                write_todos(todos, "../files/todos.txt")
 
             except IndexError:
                 print("There is no item with that number")
@@ -44,13 +44,13 @@ while True:
             continue
 
     elif user_action.startswith('show'):
-        todos = get_todos()
+        todos = get_todos("../files/todos.txt")
 
         show_todos(todos)
 
     elif user_action.startswith('edit'):
         try:  # we try this part of code, if we get value error (user inputs letters instead of numbers) we go except
-            todos = get_todos()
+            todos = get_todos("../files/todos.txt")
 
             show_todos(todos)
 
@@ -68,7 +68,7 @@ while True:
 
                 show_todos(todos)
 
-                write_todos(todos)
+                write_todos(todos, "../files/todos.txt")
 
             else:
                 print("\ninvalid number of item\n")
