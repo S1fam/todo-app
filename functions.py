@@ -24,6 +24,6 @@ def show_todos(todos_local):
 
 
 print(F"Hello from module {__name__} :P")
-if __name__ == "__main__":  # __name__ == __main__ only when we run functions.py (this) directly. not print in 1.cli-todolist.py
+if __name__ == "__main__":  # __name__ == __main__ only when we run functions.py (this) directly.
     print(__name__)  # in 1.cli-todolist.py if we called print(__name__) of this file (would have to be outside if)
     print(get_todos())  # the name would be "functions" (above)
