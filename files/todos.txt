@@ -1,13 +1,12 @@
 nachystat si batuzek
+Nahradit todo
+Udelat zkousku
+Kde jsi vzal tu mezeru!?
 complete working on project
-Chci delat znovu
-Do more fitting to-do's
-pridat z gui
-my newest to-do
+Shitty buggy code
+Do more fitting to-do's okay?
 add todos till you can scroll the list
 understand gui better
 analyze and comment your code
-go sleep on it though
-action add
-Jit spat
-Dodelat skolu :'(
+Dominik kamos
+Okay pekna prace, mame desktopovku ;)
