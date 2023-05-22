@@ -1,8 +1,13 @@
 nachystat si batuzek
 complete work on project
-jist pochutiny
-udelat moduly
-Uz jsem udelal u.u
-novyvec
+Jit spat
+Add a to-do
+Chci delat znovu
+Do more fitting to-do's
 pridat z gui
-uuh
+my newest to-do
+add todos till you can scroll the list
+understand gui better
+analyze and comment your code
+go sleep on it though
+action add
