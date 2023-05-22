@@ -9,7 +9,7 @@ while True:
 
     match user_action:
         case 'add':
-            todo = input("Enter a todo: ") + "\n"  # bereme nove todo
+            todo = input("Enter a todo: ") + "\n"  # bereme nove to-do
 
             file = open(r'D:\Python\Python projects\files\todos.txt', 'r')  # otevirame file s todos (absolutni cesta)
             todos = file.readlines()  # tvorime list nove zde, prectenim souboru

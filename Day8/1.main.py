@@ -15,7 +15,7 @@ while True:
             with open('../files/todos.txt', 'r') as file:  # you don't need to close file
                 todos = file.readlines()
 
-            todos.append(todo)  # appending list with user's added todo
+            todos.append(todo)  # appending list with user's added to-do
 
             with open('../files/todos.txt', 'w') as file:
                 file.writelines(todos)

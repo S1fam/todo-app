@@ -16,7 +16,7 @@ while True:
             todos = file.readlines()  # lines reads to a list -> 1. line will be 1. item
             file.close()
 
-            todos.append(todo)  # appending list with user's added todo
+            todos.append(todo)  # appending list with user's added to-do
 
             file = open('../files/todos.txt', 'w')
             file.writelines(todos)  # writes items of list as lines of file -> 1. item will be 1. line
