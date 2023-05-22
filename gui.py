@@ -4,8 +4,8 @@ import PySimpleGUI as Gui
 label = Gui.Text("Type in a to-do")
 input_box = Gui.InputText(tooltip="Enter todo", key="enter_todo")
 add_button = Gui.Button("Add")
-list_box = Gui.Listbox(values=functions.get_todos(), key='todos_list',
-                       enable_events=True, size=(45, 10))
+list_box = Gui.Listbox(tooltip="List of todos", values=functions.get_todos(),
+                       key='todos_list', enable_events=True, size=(45, 10))
 edit_button = Gui.Button("Edit")
 
 

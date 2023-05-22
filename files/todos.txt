@@ -1,6 +1,6 @@
 nachystat si batuzek
 complete working on project
-
+Huh?
 Jit spat
 Add a to-do
 Chci delat znovu
@@ -12,3 +12,5 @@ understand gui better
 analyze and comment your code
 go sleep on it though
 action add
+Jit spat
+
