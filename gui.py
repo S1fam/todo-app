@@ -6,12 +6,16 @@ input_box = Gui.InputText(tooltip="Enter todo", key="enter_todo")
 add_button = Gui.Button("Add")
 list_box = Gui.Listbox(tooltip="List of todos", values=functions.get_todos(),
                        key='todos_list', enable_events=True, size=(45, 10))
+
 edit_button = Gui.Button("Edit")
+complete_button = Gui.Button("Complete")
+exit_button = Gui.Button("Exit")
 
 
 window = Gui.Window('My To-Do App',
                     layout=[[label], [input_box, add_button],  # ...........79
-                            [list_box, edit_button]],
+                            [list_box, edit_button, complete_button],
+                            [exit_button]],
                     font=('Helvetica', 20))
 
 while True:
@@ -25,6 +29,8 @@ while True:
             todos.append(values["enter_todo"] + "\n")
             functions.write_todos(todos)
             window['todos_list'].update(values=todos)
+            window['enter_todo'].update(value="")
+
         case "Edit":
             todo_to_edit = values['todos_list'][0]
             new_todo = values['enter_todo']
@@ -34,8 +40,21 @@ while True:
             todos[index] = new_todo + '\n'
             functions.write_todos(todos)
             window['todos_list'].update(values=todos)
+
+        case "Complete":
+            todo_to_complete = values['todos_list'][0]
+            todos = functions.get_todos()
+            todos.remove(todo_to_complete)
+            functions.write_todos(todos)
+            window['todos_list'].update(values=todos)
+            window['enter_todo'].update(value="")
+
+        case "Exit":
+            break
+
         case 'todos_list':
             window['enter_todo'].update(value=values['todos_list'][0])
+
         case Gui.WINDOW_CLOSED:
             break
 

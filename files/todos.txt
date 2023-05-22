@@ -1,8 +1,5 @@
 nachystat si batuzek
 complete working on project
-Huh?
-Jit spat
-Add a to-do
 Chci delat znovu
 Do more fitting to-do's
 pridat z gui
@@ -13,4 +10,4 @@ analyze and comment your code
 go sleep on it though
 action add
 Jit spat
-ahojda
+Dodelat skolu :'(
