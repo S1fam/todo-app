@@ -1,5 +1,6 @@
 nachystat si batuzek
-complete work on project
+complete working on project
+
 Jit spat
 Add a to-do
 Chci delat znovu
