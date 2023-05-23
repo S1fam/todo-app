@@ -1,12 +1,8 @@
-nachystat si batuzek
-Nahradit todo
 Udelat zkousku
-Kde jsi vzal tu mezeru!?
 complete working on project
 Shitty buggy code
 Do more fitting to-do's okay?
 add todos till you can scroll the list
 understand gui better
 analyze and comment your code
-Dominik kamos
 Okay pekna prace, mame desktopovku ;)
