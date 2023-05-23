@@ -6,5 +6,3 @@ understand gui better
 analyze and comment your code
 Okay pekna prace, mame desktopovku ;)
 Pridat neco
-add
-aho
