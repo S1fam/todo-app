@@ -1,8 +1,3 @@
-complete working on project
-Shitty buggy code
-Do more fitting to-do's okay?
-add todos till you can scroll the list
-understand gui better
 analyze and comment your code
 Okay pekna prace, mame desktopovku ;)
-Pridat neco
+Okay pekna prace, mame webovku

@@ -15,12 +15,14 @@ st.subheader("This is my todo app.")
 st.write("This app is to increase your productivity.")
 
 
-for todo in todos:
-    st.checkbox(todo)
+for index, todo in enumerate(todos):
+    checkbox = st.checkbox(todo, key=f"todo{index}")
+    if checkbox:
+        todos.pop(index)
+        functions.write_todos(todos)
+        del st.session_state[f"todo{index}"]
+        st.experimental_rerun()
+
 
 st.text_input(label="Add todo:", placeholder="Add a new todo...",
               on_change=add_todo, key="new_todo", label_visibility="collapsed")
-
-print("Hrllo")
-
-st.session_state
